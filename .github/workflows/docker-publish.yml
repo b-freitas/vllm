@@ -1,7 +1,8 @@
 name: Publish Docker image - vLLM-openVINO
 
 on:
-  workflow_dispatch:
+  push:
+    branches: [ "vllm-openvino" ]
 
 jobs:
   build-and-push:
